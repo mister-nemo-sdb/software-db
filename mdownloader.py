@@ -25,7 +25,7 @@ def download_file():
 			pass
 	print('base_downloaded')
 
-def convert_ogg(output):
+def convert(output):
 	for file in os.listdir('download/'):
 		if file.endswith('.webm'):
 			music = 'download/'+file
@@ -44,6 +44,6 @@ while True:
 	outf = input('format: ')
 	load_list(file)
 	download_file()
-	convert_ogg(outf)
+	convert(outf)
 	pos_clear()
 	break
