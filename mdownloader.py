@@ -25,7 +25,7 @@ def download_file():
 			pass
 	print('base_downloaded')
 
-def convert(output):
+def convert_files(output):
 	for file in os.listdir('download/'):
 		if file.endswith('.webm'):
 			music = 'download/'+file
@@ -44,6 +44,6 @@ while True:
 	outf = input('format: ')
 	load_list(file)
 	download_file()
-	convert(outf)
+	convert_files(outf)
 	pos_clear()
 	break
